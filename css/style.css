@@ -1,19 +1,25 @@
-#mainImage {
-    display: none;
-}
 body{
     background: linear-gradient(114.15273179342603deg, rgba(231, 244, 245,1) 6.140625%,rgba(78, 240, 250,1) 95.51562499999999%);
-
+}
+.letter-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .row-fluid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#mainImage {
-    display: none;
-}
 .h2-tib {
     font-size: 250px;
+    margin: 0 auto;
+    grid-column-start: span 2;
+}
+.play {
+    grid-column-start: span 2;
+    justify-self: center;
+}
+.arrow.right {
+    justify-self: end;
 }
 #child{
     margin: 5px;
@@ -353,4 +359,7 @@ input{
 }
 .bll4{
     outline: none;
+}
+.arrow {
+    max-height: 2em;
 }

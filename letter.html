@@ -13,15 +13,13 @@
   <![endif]-->
 </head>
 
-<body>
+<body class="letter-body">
     <h2 class="h2-tib">ད</h2>
-    <audio controls>
-      <source src="sound/winner.ogg" type="audio/ogg">
-      <source src="sound/winner.mp3" type="audio/mpeg">
-      <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
-    </audio>
-<img src="img/left-arrow.svg" alt="">
-<img src="img/right-arrow.svg" alt="">
+    <input class="play" type="button" value="PLAY"  onclick="play()">
+<audio id="audio" src="sound/winner.mp3" ></audio>
+
+<img class="arrow" src="img/left-arrow.svg" alt="">
+<img class="arrow right"  src="img/right-arrow.svg" alt="">
   <script src="js/scripts.js"></script>
 </body>
 </html>
