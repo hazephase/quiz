@@ -1,9 +1,28 @@
 body{
-    background: linear-gradient(114.15273179342603deg, rgba(231, 244, 245,1) 6.140625%,rgba(78, 240, 250,1) 95.51562499999999%);
+    background-color: #f5f5f5;
+}
+
+header {
+    grid-column-start: span 2;
+    background: maroon;
+    webkit-box-shadow: rgb(128, 0, 0) 0px 0px 4px 1px;
+box-shadow: rgb(128, 0, 0) 0px 0px 4px 1px;
+margin-bottom: 2em;
+}
+.header-title{
+  color:yellow;
+}
+.uk-button.uk-button-primary.uk-button-large {
+    grid-column-start: span 2;
+}
+.link-white{
+  color: white;
+  grid-column-start: span 2;
 }
 .letter-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 100vh;
 }
 .row-fluid {
     display: grid;
@@ -14,9 +33,11 @@ body{
     margin: 0 auto;
     grid-column-start: span 2;
 }
-.play {
+.speaker {
     grid-column-start: span 2;
     justify-self: center;
+    max-width: 7rem;
+    max-height: 50px;
 }
 .arrow.right {
     justify-self: end;
@@ -362,4 +383,28 @@ input{
 }
 .arrow {
     max-height: 2em;
+}
+
+#quiz {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.btn {
+  width: calc(50% - 20px);
+  margin: 5px;
+  font-size: 3em;
+  background-color:  white; 
+}
+
+.score {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  margin: 0;
 }
